@@ -84,10 +84,3 @@ Este projeto está configurado para o ambiente de nuvem e utiliza o **PostgreSQL
 * **Estratégia JPA:** `spring.jpa.hibernate.ddl-auto=update` para criar as tabelas automaticamente na primeira execução.
 * **Conexão:** As credenciais do banco de dados (URL, Username, Password) são injetadas automaticamente pelo Railway via Variáveis de Ambiente.
 
-### Integração com o Front-end Angular (Netlify)
-
-Após o *deploy* bem-sucedido no Railway, o Front-end (hospedado no Netlify, `projeto-bruno-blayker.netlify.app`) deve ser atualizado para chamar a URL pública da API no `user.service.ts`:
-
-```typescript
-// Exemplo de atualização no arquivo user.service.ts do Angular:
-private apiUrl = '';
